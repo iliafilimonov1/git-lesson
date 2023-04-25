@@ -597,12 +597,16 @@ main {
 footer {
   background-color: #F9FAFB;
   padding: 64px 0 24px 0;
+  font-family: 'Inter', 'Font Awesome', sans-serif;
 }
 
 
 .footer-bottom {
   margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E7EB;
 }
+
 
 
 .flex-container {
@@ -611,7 +615,6 @@ footer {
 }
 
 .title-footer {
-  font-family: 'Inter', 'Font Awesome', sans-serif;
   font-weight: 500;
   font-size: 16px;
   padding-bottom: 16px;
@@ -620,7 +623,6 @@ footer {
 
 
 .support {
-  font-family: 'Inter', 'Font Awesome', sans-serif;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 16px;
@@ -629,7 +631,6 @@ footer {
 
 .flex-container-left {
   width: 350px;
-  font-family: 'Inter', 'Font Awesome', sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -640,7 +641,8 @@ footer {
 
 .language-details,
 .social-media,
-.currency {
+.currency,
+.globe {
   color: var(--footer-subtitle-color);
 }
 
@@ -666,9 +668,12 @@ footer {
 
 .flex-container-right {
   width: 320px;
-  font-family: 'Inter', 'Font Awesome', sans-serif;
   font-weight: 500;
   font-size: 14px;
+}
+
+.globe img {
+  margin-right: 7px;
 }
 
 .globe-footer {
@@ -680,8 +685,11 @@ footer {
   width: 100px;
 }
 
-.footer-bottom {
-  padding-top: 70px;
+
+/* эффект при наведении на ссылку footer */
+.footer-top a:hover,
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 
@@ -699,9 +707,9 @@ footer {
   margin-bottom: 24px;
 }
 
-/* .ml-36px {
+.ml-36px {
   margin-left: 36px;
-} */
+}
 
 .flex {
   display: flex;
